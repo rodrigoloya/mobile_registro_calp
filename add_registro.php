@@ -21,15 +21,15 @@ if ($result = $conn -> query("SELECT * FROM tbl_Registro")) {
   $result -> free_result();
 }
 
-$numempleado=$_GET['usuarioid'];
-$nombre=$_GET['nombreactividad'];
-$categoria=$_GET['categoria'];
-$hora=$_GET['hora'];
-$diasemana=$_GET['diasemana'];
-$repetitiva=$_GET['repetitiva'];
-$lugar=$_GET['lugar'];
-$esvirtual=$_GET['esvirtual'];
-$usuarioalta=$_GET['usuarioalta'];
+$numempleado=$_POST['usuarioid'];
+$nombre=$_POST['nombreactividad'];
+$categoria=$_POST['categoria'];
+$hora=$_POST['hora'];
+$diasemana=$_POST['diasemana'];
+$repetitiva=$_POST['repetitiva'];
+$lugar=$_POST['lugar'];
+$esvirtual=$_POST['esvirtual'];
+$usuarioalta=$_POST['usuarioalta'];
 $date = date('Y-m-d H:i:s');
  
 
